@@ -8,14 +8,6 @@ class BDRobot {
   //yAnchor - vertical anchor for where the robot is drawn
   void drawAt(int xAnchor, int yAnchor, float horizontalScale, float verticalScale) {
     noStroke();
-    //moon
-    //fill(140);
-    //ellipse(300, 800, 900, 600);
-    //strokeWeight(2);
-    //fill(90);
-    //ellipse(xAnchor * horizontalScale + 150, yAnchor * verticalScale + 600, 150, 80);
-    //ellipse (xAnchor * horizontalScale + 400, yAnchor * verticalScale + 680, 150, 80);
-    //ellipse(xAnchor * horizontalScale + 600, yAnchor * verticalScale + 640, 150, 80);
     fill(169);
     rect(xAnchor + 200 * horizontalScale, yAnchor + 200 * verticalScale, 200 * horizontalScale, 150 * verticalScale);
     fill(130);
