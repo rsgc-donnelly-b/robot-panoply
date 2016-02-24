@@ -1,6 +1,8 @@
 //Makes function run once
-class KC_Robot {
-  void KC_Robot () {
+
+class KCRobot {
+  void KCRobot () {
+
   } 
 
   //Let x be xAnchor
@@ -40,4 +42,5 @@ class KC_Robot {
 
     //violet rectangle
   }
+
 }
