@@ -1,4 +1,4 @@
-class DDRobot {
+ class DDRobot {
 
   void DDRobot() {
   }

@@ -42,5 +42,4 @@ class KCRobot {
 
     //violet rectangle
   }
-
 }
