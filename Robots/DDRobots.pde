@@ -1,8 +1,8 @@
- class DDRobot {
 
+class DDRobot {
   void DDRobot() {
   }
-  
+
   void drawAt(int x, int y) {
 
     //This Robot is BB8
