@@ -5,8 +5,17 @@ void setup() {
 }
 
 void draw() {
+  //if (frameCount % 180 == 0){
+   //scene+=1; 
+  //}
   background(100);
   if (scene == 1) {
+    background(100);
+    textSize(60);
+    fill(0);
+    text("Robocop", 386, 320);
+  }
+  if (scene == 2) {
     int murphyX = 325;
     int murphyY = 275;
 
@@ -46,7 +55,7 @@ void draw() {
     text("Murphy is shot in this scene", 0, 688);
 
     //changing scenes
-  } else if (scene == 2) {
+  } else if (scene == 3) {
 
     //Scene 2 text
     fill(0);
@@ -82,7 +91,7 @@ void draw() {
     text("Murphy is revived as Robocop", 0, 688);
 
     //Third If statement
-  } else if (scene == 3) {
+  } else if (scene == 4) {
     //Scene 3 text
     fill(0);
     textSize(50);
@@ -129,7 +138,7 @@ void draw() {
     fill(255);
     rect(0, 650, 2038, 398);
     fill(0);
-    textSize(40);
+    textSize(30);
     text("CEO of Omnicorp is held at gunpoint but Robocop saves the day", 0, 688);
   }
 }
