@@ -5,9 +5,9 @@ void setup() {
 }
 
 void draw() {
-  //if (frameCount % 180 == 0){
-  // scene+=1; 
-  //}
+  if (frameCount % 180 == 0){
+  scene+=1; 
+  }
   saveFrame("Export - ####.png");
   frameRate(60);
   background(100);
