@@ -67,15 +67,42 @@ void draw() {
     fill(0);
     textSize(20);
     text("We can still revive him as a robot!", doctorX + 200, doctorY + 25);
-  } else if (scene == 3);  {
+
+    //Third If statement
+    //Not currently working, something wrong with the If statement
+  } else if (scene == 3) {
+    //Scene 3 text
+    fill(0);
+    textSize(50);
+    text("Scene 3", 400, 100);
+
+    //rest of room
+    fill(#7f7e7d);
+    rect(0, 0, 1000, 700);
+
+    //floor
+    fill(#221702);
+    triangle(0, 700, 1000, 700, 500, 250); 
+
+    //Window
     noStroke();
-    fill(0, 10, 60);
-    rect(100, 100, 100, 55);
+    fill(0, 420, 6900);
+    rect(205, 162, 600, 365);
+
+    int badguyX = 500;
+    int badguyY = 367;
+    
+    RGRobot badguy = new RGRobot();
+    
+    badguy.drawAt(badguyX, badguyY, 0.4, 0.4);
+    
+    int ceoX = 504;
+    int ceoY = 367;
+    
+    KCRobot CEO = new KCRobot();
+    CEO.drawAt(ceoX, ceoY, 0.4, 0.4);
     
   }
-  
-    
-
 }
 
 void keyPressed() {
