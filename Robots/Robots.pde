@@ -6,14 +6,18 @@ void setup() {
 
 void draw() {
   //if (frameCount % 180 == 0){
-   //scene+=1; 
+  // scene+=1; 
   //}
+  saveFrame("Export - ####.png");
+  frameRate(60);
   background(100);
   if (scene == 1) {
     background(100);
     textSize(60);
     fill(0);
     text("Robocop", 386, 320);
+    textSize(31);
+    text("Ben Donnelly", 408, 416);
   }
   if (scene == 2) {
     int murphyX = 325;
