@@ -37,6 +37,13 @@ void draw() {
     fill(0);
     rect(970, 300, 20, 55);
     rect(900, 300, 90, 20);
+    
+    //Text box
+    fill(255);
+    rect(0, 650, 2038, 398);
+    fill(0);
+    textSize(40);
+    text("Murphy is shot in this scene", 0, 688);
 
     //changing scenes
   } else if (scene == 2) {
@@ -67,9 +74,14 @@ void draw() {
     fill(0);
     textSize(20);
     text("We can still revive him as a robot!", doctorX + 200, doctorY + 25);
+    //Text box
+    fill(255);
+    rect(0, 650, 2038, 398);
+    fill(0);
+    textSize(40);
+    text("Murphy is revived as Robocop", 0, 688);
 
     //Third If statement
-    //Not currently working, something wrong with the If statement
   } else if (scene == 3) {
     //Scene 3 text
     fill(0);
@@ -89,19 +101,36 @@ void draw() {
     fill(0, 420, 6900);
     rect(205, 162, 600, 365);
 
+    //Drawing the bad guy whose name escapes me
     int badguyX = 500;
     int badguyY = 367;
-    
+
     RGRobot badguy = new RGRobot();
-    
     badguy.drawAt(badguyX, badguyY, 0.4, 0.4);
-    
+
+    //Drawing the CEO being held at gunpoint by the badguy
     int ceoX = 504;
     int ceoY = 367;
-    
     KCRobot CEO = new KCRobot();
     CEO.drawAt(ceoX, ceoY, 0.4, 0.4);
+    //gun
+    int gunX = 186;
+    int gunY = 270;
     
+    gun gun1 = new gun();
+    gun1.drawAt(gunX, gunY, 0.5, 0.5);
+    
+    int robocopX = 250;
+    int robocopY = 500;
+    
+    BDRobot robocop = new BDRobot();
+    robocop.drawAt(robocopX, robocopY, 0.4, 0.4);
+    //Text box
+    fill(255);
+    rect(0, 650, 2038, 398);
+    fill(0);
+    textSize(40);
+    text("CEO of Omnicorp is held at gunpoint but Robocop saves the day", 0, 688);
   }
 }
 
